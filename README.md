@@ -1,5 +1,5 @@
 # QZMQ
-消息队列之ZMQ（C++）
+QZMQ是基于消息队列之ZMQ（C++）搭建的基础框架
 
 ZeroMQ概述：
 
