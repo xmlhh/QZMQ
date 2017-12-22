@@ -24,6 +24,26 @@ public:
     */
     void InitUI();
 
+    /**
+    * @author by LHH
+    * @brief 控件信号的连接
+    * @param 无
+    * @return void
+    */
+    void SignalConnects();
+
+private slots:
+    /**
+    * @author by LHH
+    * @brief 启动
+    * @param 无
+    * @return void
+    */
+    void OnStartBtn();
+
+private:
+    bool m_bStartFlag;
+
 private:
     Ui::LeonWgt *ui;
 };

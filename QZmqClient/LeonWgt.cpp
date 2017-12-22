@@ -6,6 +6,7 @@
 
 LeonWgt::LeonWgt(QWidget *parent) :
     LDrawWgt(parent),
+    m_bStartFlag(false),
     ui(new Ui::LeonWgt)
 {
     InitUI();
@@ -44,4 +45,39 @@ void LeonWgt::InitUI()
     setShowMinBtn(true);
     // 不显示最大化按钮
     setShowMaxBtn(false);
+    // 信号的连接
+    SignalConnects();
+}
+
+
+/**
+* @author by LHH
+* @brief 控件信号的连接
+* @param 无
+* @return void
+*/
+void LeonWgt::SignalConnects()
+{
+    QObject::connect(ui->m_pStartBtn, SIGNAL(clicked()), this, SLOT(OnStartBtn()));
+}
+
+
+/**
+* @author by LHH
+* @brief 启动
+* @param 无
+* @return void
+*/
+void LeonWgt::OnStartBtn()
+{
+    if (!m_bStartFlag)
+    {
+        ui->m_pStartBtn->setText("停止");
+    }
+    else
+    {
+        ui->m_pStartBtn->setText("启动");
+    }
+
+    m_bStartFlag = !m_bStartFlag;
 }
