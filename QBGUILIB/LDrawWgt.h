@@ -39,7 +39,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setWindowTitle(const QString& text);
+    void setWindowTitle(const QString& text);
 
     /**
     * @author by LHH
@@ -47,7 +47,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setDragable(bool bDragable);
+    void setDragable(bool bDragable);
 
     /**
     * @author by LHH
@@ -55,7 +55,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setResizable(bool bResizable);
+    void setResizable(bool bResizable);
 
     /**
     * @author by LHH
@@ -63,7 +63,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setMaxable(bool bMaxable);
+    void setMaxable(bool bMaxable);
 
     /**
     * @author by LHH
@@ -71,7 +71,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setShowMinBtn(bool bMin);
+    void setShowMinBtn(bool bMin);
 
     /**
     * @author by LHH
@@ -79,7 +79,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setShowMaxBtn(bool bMax);
+    void setShowMaxBtn(bool bMax);
 
     /**
     * @author by LHH
@@ -87,7 +87,7 @@ public:
     * @param 无
     * @return void
     */
-    QBGUILIBSHARED_EXPORT void setShowMoreOptions(bool bOpt);
+    void setShowMoreOptions(bool bOpt);
     /************************************************************************
     *   外部公共接口——结束
     ************************************************************************/
